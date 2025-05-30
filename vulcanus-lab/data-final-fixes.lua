@@ -1,7 +1,9 @@
 data.raw['lab']['metallurgic-lab'].inputs = data.raw['lab']['lab'].inputs
-local no_space_age = (settings.startup["no-space-age-compatibility"].value or mods["space-age"] ~= true)
+local no_space_age = (settings.startup["no-space-age-compatibility"].value)
 
-
+if(mods["space-age"] ~= true) then
+  no_space_age = false
+end
 
 if(no_space_age) then
     data.raw.recipe["inspirational-fuel-cell"].subgroup = nil
@@ -44,7 +46,7 @@ if(no_space_age) then
       time = 60
     }
     data.raw.lab["metallurgic-lab"].surface_conditions = nil
-    data.raw.item["inspirational-fuel-cell"].subgroup = nil
-    data.raw.recipe["inspirational-fuel-cell"].subgroup = nil
-    data.raw.recipe["inspirational-fuel-cell-recycling"].subgroup = nil
+    data.raw.item["inspirational-fuel-cell"].subgroup = "uranium-processing"
+    data.raw.recipe["inspirational-fuel-cell"].subgroup = "uranium-processing"
+    data.raw.recipe["inspirational-fuel-cell-recycling"].subgroup = "uranium-processing"
 end

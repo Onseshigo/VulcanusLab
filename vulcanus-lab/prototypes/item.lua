@@ -44,7 +44,7 @@ data:extend
     name = "metallurgic-lab",
     icon = "__vulcanus-lab__/graphics/icons/lab-64.png",
     subgroup = "production-machine",
-    order = "z[z-metallurgic-lab]",
+    order = "z[z-biolab]",
     inventory_move_sound = item_sounds.mechanical_inventory_move,
     pick_sound = item_sounds.mechanical_inventory_pickup,
     drop_sound = item_sounds.mechanical_inventory_move,
