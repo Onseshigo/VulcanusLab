@@ -1,7 +1,8 @@
 data.raw['lab']['metallurgic-lab'].inputs = data.raw['lab']['lab'].inputs
-local no_space_age = (settings.startup["no-space-age-compatibility"].value)
+local no_space_age = false
+no_space_age = settings.startup["no-space-age-compatibility"].value
 
-if(mods["space-age"] ~= true) then
+if(mods["space-age"] == nil) then
   no_space_age = true
 end
 
