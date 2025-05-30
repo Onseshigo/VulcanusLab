@@ -2,7 +2,7 @@ data.raw['lab']['metallurgic-lab'].inputs = data.raw['lab']['lab'].inputs
 local no_space_age = (settings.startup["no-space-age-compatibility"].value)
 
 if(mods["space-age"] ~= true) then
-  no_space_age = false
+  no_space_age = true
 end
 
 if(no_space_age) then
