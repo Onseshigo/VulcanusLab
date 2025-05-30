@@ -1,0 +1,5 @@
+require("__vulcanus-lab__.prototypes.entity.entities")
+require("__vulcanus-lab__.prototypes.item")
+require("__vulcanus-lab__.prototypes.fuel-category")
+require("__vulcanus-lab__.prototypes.recipe")
+require("__vulcanus-lab__.prototypes.technology")

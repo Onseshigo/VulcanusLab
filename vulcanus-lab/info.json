@@ -1,0 +1,11 @@
+{
+    "name": "vulcanus-lab",
+    "version": "1.0.0",
+    "title": "Metallurgic Laboratory",
+    "author": "ZDK, 2025",
+    "factorio_version": "2.0",
+    "dependencies": ["base >= 2.0",
+            "? PlanetsLib >= 1.0.0"
+    ],
+    "description": "This mod adds a sidegrade to the Biolab - meant to be used on Vulcanus. This mod can be used without Space Age."
+}
