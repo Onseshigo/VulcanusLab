@@ -115,7 +115,7 @@ data:extend
       "cryogenic-science-pack",
       "promethium-science-pack"
     },
-    science_pack_drain_rate_percent = 50,
+    science_pack_drain_rate_percent = settings.startup["metallurgic_lab_science_pack_drain_rate_percent"].value,
     energy_source =
     {
       type = "burner",
